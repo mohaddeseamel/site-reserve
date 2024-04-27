@@ -54,6 +54,7 @@ export default {
     // const onSwiper = (swiper) => {
     //     console.log('swiperrrr' , swiper);
     //   };
+    
     const isActive = ref(false);
     const activeIndex = ref(null);
     const cards = reactive([
