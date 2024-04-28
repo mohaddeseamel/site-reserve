@@ -10,4 +10,8 @@
      extend: {},
    },
    plugins: [],
+   container: {
+    center: true,
+    padding: "20px",
+}
  }

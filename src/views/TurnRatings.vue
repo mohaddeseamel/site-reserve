@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="content">
     <!-- <div class="dialogAddInfo w-50 bg-white" style=" position: absolute; bottom: 0;right: 0; left:0; bottom:0;" v-if="openDialog">
       <div class="showInfo">
         <div class="header-info">
@@ -76,9 +76,11 @@
               <div class="header-info">
                 <h1 class="text-center text-base font-medium">ثبت اطلاعات</h1>
               </div>
-                <div class="mt-5 text-right sm:ml-4 sm:mt-0 sm:text-right">
-                  <p class="text-xs mt-5 text-gray-600">.لطفا جهت ثبت نوبت اطلاعات خود را تکمیل کنید</p>
-                </div>
+              <div class="mt-5 text-right sm:ml-4 sm:mt-0 sm:text-right">
+                <p class="text-xs mt-5 text-gray-600">
+                  .لطفا جهت ثبت نوبت اطلاعات خود را تکمیل کنید
+                </p>
+              </div>
             </div>
             <div
               class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
@@ -125,7 +127,7 @@
       </div>
       <div class="showTurnRatings w-1/2">
         <HeaderTurnRating />
-        <showTimeReserve  @cardDateValue="showData($event)"/>
+        <showTimeReserve @cardDateValue="showData($event)" />
         <TabMenu />
       </div>
     </div>
@@ -140,8 +142,6 @@ import showTimeReserve from "../components/showTimeReserve.vue";
 
 const openDialog = ref(false);
 
-
-
 const gotoInfoUser = () => {
   console.log("uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu");
   openDialog.value = !openDialog.value;
@@ -152,12 +152,12 @@ const closeDialog = () => {
   openDialog.value = false;
 };
 const showData = (event) => {
-  console.log('eventeventevent' , event)
-}
+  console.log("eventeventevent", event);
+};
 </script>
 
 <style scoped>
-.container {
+.content {
   background: rgb(238, 174, 202);
   background: radial-gradient(
     circle,
