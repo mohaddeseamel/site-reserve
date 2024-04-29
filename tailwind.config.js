@@ -1,17 +1,17 @@
- /** @type {import('tailwindcss').Config} */
- export default {
+/** @type {import('tailwindcss').Config} */
+export default {
   purge: [],
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-   darkMode: false, // or 'media' or 'class'
-   theme: {
-     extend: {},
-   },
-   variants: {
-     extend: {},
-   },
-   plugins: [],
-   container: {
-    center: true,
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+  container: {
+    center: false,
     padding: "20px",
+  }
 }
- }
