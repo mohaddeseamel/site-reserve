@@ -27,7 +27,7 @@
       </li>
     </ul>
     <div class="p-4 text-center bg-white">
-      <div v-if="tab === 1" class="flex justify-between items-center flex-wrap">
+      <div v-if="tab === 1" class="flex justify-start  items-center flex-wrap">
         <div
           class="timeBtn"
           ref="checkedBg"
@@ -37,27 +37,27 @@
           <button
             @click="changeColor(index)"
             :class="[{ active: indexActive == index }]"
-            class="border-2 border-red-300 px-6 py-2 mt-3 rounded-lg w-40"
+            class="border-2 border-red-300 ml-3 px-6 py-2 mt-3 rounded-lg w-40"
           >
             {{ hour.time }}
           </button>
         </div>
       </div>
-      <div v-if="tab === 2" class="flex justify-between items-center flex-wrap">
+      <div v-if="tab === 2" class="flex justify-start items-center flex-wrap">
         <div class="timeBtn" v-for="(hour, index) in noonTime" :key="index">
           <button
             @click="changeColor(index)"
             :class="[{ active: indexActive == index }]"
-            class="border-2 border-red-300 px-6 py-2 mt-3 rounded-lg w-40 hover:bg-red-400 hover:text-white hover:border-transparent"
+            class="border-2 border-red-300 ml-3 px-6 py-2 mt-3 rounded-lg w-40 hover:bg-red-400 hover:text-white hover:border-transparent"
           >
             {{ hour.time }}
           </button>
         </div>
       </div>
-      <div v-if="tab === 3" class="flex justify-between items-center flex-wrap">
+      <div v-if="tab === 3" class="flex justify-start items-center flex-wrap">
         <div class="timeBtn" v-for="(hour, index) in morningTime" :key="index">
           <button
-            class="border-2 border-red-300 px-6 py-2 mt-3 rounded-lg w-40 hover:bg-red-400 hover:text-white hover:border-transparent"
+            class="border-2 border-red-300 ml-3 px-6 py-2 mt-3 rounded-lg w-40 hover:bg-red-400 hover:text-white hover:border-transparent"
             @click="changeColor(index)"
             :class="[{ active: indexActive == index }]"
           >
@@ -167,7 +167,7 @@ export default {
       },
     ]);
 
-    return{
+    return {
       tab,
       checkedBg,
       indexActive,
@@ -177,8 +177,8 @@ export default {
       changeColor,
       morningTime,
       noonTime,
-      nightTime
-    }
+      nightTime,
+    };
   },
 };
 </script>
