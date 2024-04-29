@@ -180,7 +180,7 @@ import TabMenu from "../components/TabMenu.vue";
 import HeaderTurnRating from "../components/HeaderTurnRating.vue";
 import showTimeReserve from "../components/showTimeReserve.vue";
 
-const openDialog = ref(true);
+const openDialog = ref(false);
 
 const gotoInfoUser = () => {
   console.log("uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu");
