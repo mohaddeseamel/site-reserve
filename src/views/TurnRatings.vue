@@ -1,39 +1,5 @@
 <template>
-  <div class="content">
-    <!-- <div class="dialogAddInfo w-50 bg-white" style=" position: absolute; bottom: 0;right: 0; left:0; bottom:0;" v-if="openDialog">
-      <div class="showInfo">
-        <div class="header-info">
-          <h1>ثبت اطلاعات</h1>
-          <i @click="closeDialog()" style="font-size:18px" class="fa">&#xf00d;</i>
-        </div>
-        <div class="showComment">
-          <p>لطفا جهت ثبت نوبت اطلاعات خود را تکمیل نمایید.</p>
-        </div>
-        <div class="Info">
-          <div class="name">
-            <label for="name">نام</label>
-            <input type="text" name="name" placeholder="">
-          </div>
-          <div class="lastName">
-            <label for="lastName">نام خانوادگی</label>
-            <input type="text" name="lastName" placeholder="">
-          </div>
-           <div class="mobile">
-            <label for="mobile">شماره موبایل</label>
-            <input type="number" name="mobile" placeholder="">
-          </div>
-           <div class="meliCode">
-            <label for="meliCode">کدملی</label>
-            <input type="text" name="meliCode" placeholder="">
-          </div>
-          <div class="gender">
-            <h2>جنسیت</h2>
-            <input type="radio" name="meliCode" placeholder="">
-            <input type="radio" name="meliCode" placeholder="">
-          </div>
-        </div>
-      </div>
-    </div> -->
+  <div class="container">
     <div
       class="relative z-10"
       aria-labelledby="modal-title"
@@ -41,62 +7,136 @@
       aria-modal="true"
       v-if="openDialog"
     >
-      <!--
-    Background backdrop, show/hide based on modal state.
-
-    Entering: "ease-out duration-300"
-      From: "opacity-0"
-      To: "opacity-100"
-    Leaving: "ease-in duration-200"
-      From: "opacity-100"
-      To: "opacity-0"
-  -->
       <div
         class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
       ></div>
 
       <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
         <div
-          class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+          class="flex min-h-full  items-end justify-center p-4 text-center sm:items-center sm:p-0"
         >
-          <!--
-        Modal panel, show/hide based on modal state.
-
-        Entering: "ease-out duration-300"
-          From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-          To: "opacity-100 translate-y-0 sm:scale-100"
-        Leaving: "ease-in duration-200"
-          From: "opacity-100 translate-y-0 sm:scale-100"
-          To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-      -->
           <div
             class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
           >
             <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-              <div class="header-info">
-                <h1 class="text-center text-base font-medium">ثبت اطلاعات</h1>
-              </div>
-              <div class="mt-5 text-right sm:ml-4 sm:mt-0 sm:text-right">
-                <p class="text-xs mt-5 text-gray-600">
-                  .لطفا جهت ثبت نوبت اطلاعات خود را تکمیل کنید
-                </p>
-              </div>
+              <form>
+                <h1 class="text-center text-base font-medium">تکمیل اطلاعات</h1>
+                <div class="mt-5 text-right sm:ml-4 sm:mt-0 sm:text-right">
+                  <p class="text-xs mt-5 text-gray-600">
+                    .لطفا جهت ثبت نوبت اطلاعات خود را تکمیل کنید
+                  </p>
+                </div>
+                <i
+                  @click="closeDialog()"
+                  class="fa absolute top-6 cursor-pointer"
+                  >&#xf00d;</i
+                >
+                <div class="flex mt-8">
+                  <div class="mb-4 mr-5 w-full">
+                    <label
+                      class="block text-right  text-gray-700 text-sm font-bold mb-2"
+                      for="username"
+                    >
+                      نام خانوادگی
+                    </label>
+                    <input
+                      class="shadow text-right text-xs  appearance-none border rounded w-full py-3 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      id="username"
+                      type="text"
+                      placeholder="نام خانوادگی را وارد نمایید"
+                    />
+                  </div>
+                  <div class="mb-4 w-full">
+                    <label
+                      class="block text-right text-gray-700 text-sm font-bold mb-2"
+                      for="username"
+                    >
+                      نام
+                    </label>
+                    <input
+                      class="shadow text-right text-xs appearance-none border rounded w-full py-3 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      id="username"
+                      type="text"
+                      placeholder="نام را وارد نمایید"
+                    />
+                  </div>
+                </div>
+                <div class="flex mt-3">
+                  <div class="mb-4 mr-5 w-full">
+                    <label
+                      class="block text-right text-gray-700 text-sm font-bold mb-2"
+                      for="username"
+                    >
+                      شماره موبایل
+                    </label>
+                    <input
+                      class="shadow text-xs text-right appearance-none border rounded w-full py-3 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      id="username"
+                      type="password"
+                      placeholder="شماره موبایل خود را وارد نمایید"
+                    />
+                  </div>
+                  <div class="mb-4 w-full">
+                    <label
+                      class="block text-right text-gray-700 text-sm font-bold mb-2"
+                      for="password"
+                    >
+                      کدملی
+                    </label>
+                    <input
+                      class="shadow text-xs text-right appearance-none border rounded w-full py-4 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      id="username"
+                      type="password"
+                      placeholder="کدملی خود را وارد نمایید"
+                    />
+                  </div>
+                </div>
+
+               <div class="flex mt-3">
+                  <div
+                  class="flex w-full  mr-2 items-center ps-4 border border-gray-200 rounded dark:border-gray-700"
+                >
+                  <input
+                    id="bordered-radio-1"
+                    type="radio"
+                    value=""
+                    name="bordered-radio"
+                    class="w-4 h-4  text-blue-600  border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label
+                    for="bordered-radio-1"
+                    class="w-full  py-4 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >زن</label
+                  >
+                </div>
+                <div
+                  class="flex w-full items-center ps-4 border border-gray-200 rounded dark:border-gray-700"
+                >
+                  <input
+                    checked
+                    id="bordered-radio-2"
+                    type="radio"
+                    value=""
+                    name="bordered-radio"
+                    class="w-4 h-4  text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label
+                    for="bordered-radio-2"
+                    class="w-full  px-3 py-4 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >مرد</label
+                  >
+                </div>
+               </div>
+              </form>
             </div>
             <div
-              class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
+              class="bg-gray-50 w-full px-4 py-3"
             >
               <button
                 type="button"
-                class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
+                class="w-full bg-red-400 px-4 py-3 text-white rounded-full"
               >
-                Deactivate
-              </button>
-              <button
-                type="button"
-                class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
-                @click="closeDialog"
-              >
-                Cancel
+                ثبت اطلاعات
               </button>
             </div>
           </div>
@@ -140,7 +180,7 @@ import TabMenu from "../components/TabMenu.vue";
 import HeaderTurnRating from "../components/HeaderTurnRating.vue";
 import showTimeReserve from "../components/showTimeReserve.vue";
 
-const openDialog = ref(false);
+const openDialog = ref(true);
 
 const gotoInfoUser = () => {
   console.log("uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu");
