@@ -190,7 +190,7 @@ const closeDialog = () => {
   openDialog.value = false;
 };
 const showData = (e) => {
-  console.log("eventeventevent"  , e);
+  console.log("eventeventevent", e);
 };
 </script>
 

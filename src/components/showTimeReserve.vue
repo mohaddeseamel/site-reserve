@@ -32,7 +32,7 @@
   </div>
 </template>
 <script>
-import { ref, reactive , defineEmits} from "vue";
+import { ref, reactive, defineEmits } from "vue";
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
@@ -47,12 +47,12 @@ export default {
     Swiper,
     SwiperSlide,
   },
-  setup() {
+  emits: ["cardDateValue"],
+  setup(props, ctx) {
     // const backgroundColor = ref('white')
     // const onSwiper = (swiper) => {
     //     console.log('swiperrrr' , swiper);
     //   };
-    const emit = defineEmits(['cardDateValue']);
     const isActive = ref(false);
     const activeIndex = ref(null);
     const cards = reactive([
@@ -121,7 +121,7 @@ export default {
 
     const toggleBg = (index) => {
       activeIndex.value = index;
-      emit("cardDateValue", cards[index]);
+      ctx.emit("cardDateValue", cards[index]);
     };
 
     // const changeColor = (e) => {
