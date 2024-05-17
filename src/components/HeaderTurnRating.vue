@@ -1,8 +1,8 @@
 <template>
-    <div class="Ratings bg-white p-5 flex justify-between items-center">
-        <button class="prev flex text-sm">
+    <div class="Ratings p-5 flex justify-between items-center" style="background-color: #e3ba9c;">
+        <button class="prev flex text-sm text-white">
           <svg
-            class="h-5 w-5 text-red-500"
+            class="h-5 w-5 text-white"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -18,12 +18,12 @@
           ماه بعد
         </button>
         <div class="title">
-          <h1 class="font-bold text-lg">اردیبهشت 1403</h1>
+          <h1 class="font-bold text-lg text-white">اردیبهشت 1403</h1>
         </div>
-        <button class="next flex text-sm disabled:text-slate-500" disabled>
+        <button class="next flex text-sm  disabled:text-white" disabled>
           ماه قبل
           <svg
-            class="h-5 w-5 text-red-500"
+            class="h-5 w-5 text-white"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -34,6 +34,7 @@
             <polyline points="9 18 15 12 9 6" />
           </svg>
         </button>
+        
       </div>
 </template>
 

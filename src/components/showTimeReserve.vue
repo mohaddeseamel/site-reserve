@@ -1,11 +1,11 @@
 <template>
   <div
-    class="showTimeReserve p-5 w-full bg-gray-200 flex justify-between items-center"
+    class="showTimeReserve p-5 w-full bg-white flex justify-between items-center"
   >
     <swiper
       effect="cube"
       :modules="modules"
-      :slides-per-view="4"
+      :slides-per-view="8"
       :centeredSlides="false"
       :spaceBetween="20"
       :navigation="true"
@@ -13,20 +13,20 @@
       class="mySwiper"
     >
       <swiper-slide
-        class="card flex w-24 text-center rounded-lg bg-white focus:bg-red-300 cursor-pointer p-2 flex-col leading-8 overflow-x-hidden"
+        class="card flex w-24 text-center rounded-lg focus:bg-red-300 cursor-pointer p-2 flex-col leading-8 overflow-x-hidden"
         v-for="(card, index) in cards"
         :key="index"
         :virtualIndex="card.id"
         :class="[{ active: index === activeIndex }]"
         @click="toggleBg(index)"
+        style="color: #969495"
       >
         <span class="text-zinc-800 text-sm">{{ card.dateText }}</span>
         <span
-          class="bg-red-400 rounded-full mt-2 mx-auto text-center text-white"
-          style="width: 2.2em; height: 2.2em; display: block"
+          class="rounded-full mx-auto text-center visited:text-blue-800 underline-offset-30"
+          style="width: 2.2em; height: 2.2em; display: block; color: #7f7b72"
           >{{ card.dateNum }}</span
         >
-        <p class="text-xs text-zinc-500 mt-2">{{ card.desc }}</p>
       </swiper-slide>
     </swiper>
   </div>
@@ -60,55 +60,61 @@ export default {
         id: 0,
         dateText: "امروز",
         dateNum: 12,
-        desc: "روز کاری",
       },
       {
         id: 1,
         dateText: "امروز",
         dateNum: 12,
-        desc: "روز کاری",
       },
       {
         id: 2,
         dateText: "امروز",
         dateNum: 12,
-        desc: "روز کاری",
       },
       {
         id: 3,
         dateText: "یکشنبه",
         dateNum: 8,
-        desc: "روزغیرکاری",
       },
       {
         id: 4,
         dateText: "یکشنبه",
         dateNum: 8,
-        desc: "روزغیرکاری",
       },
       {
         id: 5,
         dateText: "یکشنبه",
         dateNum: 8,
-        desc: "روزغیرکاری",
       },
       {
         id: 6,
         dateText: "شنبه",
         dateNum: 9,
-        desc: "روز کاری",
       },
       {
         id: 7,
         dateText: "جمعه",
         dateNum: 10,
-        desc: "ظرفیت تکمیل",
       },
       {
         id: 8,
         dateText: "پنجشنبه",
         dateNum: 11,
-        desc: "روز کاری",
+      },
+      {
+        id: 9,
+        dateText: "جمعه",
+        dateNum: 12,
+      },
+      {
+        id: 10,
+        dateText: "شنبه",
+        dateNum: 13,
+      },
+      {
+        id: 11,
+        dateText: "یکشنبه",
+        dateNum: 13,
       },
     ]);
     let swiperRef = null;
