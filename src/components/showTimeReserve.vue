@@ -1,11 +1,11 @@
 <template>
   <div
-    class="showTimeReserve p-5 w-full bg-white flex justify-between items-center"
+    class="showTimeReserve  w-full bg-white flex justify-between items-center"
   >
     <swiper
       effect="cube"
       :modules="modules"
-      :slides-per-view="8"
+      :slides-per-view="10"
       :centeredSlides="false"
       :spaceBetween="20"
       :navigation="true"
@@ -13,7 +13,7 @@
       class="mySwiper"
     >
       <swiper-slide
-        class="card flex w-24 text-center rounded-lg focus:bg-red-300 cursor-pointer p-2 flex-col leading-8 overflow-x-hidden"
+        class="card flex w-24 text-center  focus:bg-red-300 cursor-pointer p-2 flex-col leading-8 overflow-x-hidden"
         v-for="(card, index) in cards"
         :key="index"
         :virtualIndex="card.id"
@@ -21,7 +21,7 @@
         @click="toggleBg(index)"
         style="color: #969495"
       >
-        <span class="text-sm" style="color: #928b85">{{ card.dateText }}</span>
+        <span class="text-base font-yekan " style="color: #928b85">{{ card.dateText }}</span>
         <span
           class="rounded-full mx-auto text-center visited:text-blue-800 underline-offset-30"
           style="width: 2.2em; height: 2.2em; display: block; color: #8c6f60"
@@ -169,6 +169,7 @@ export default {
   background: blue;
 }
 .active {
-  background-color: #e4ceb6;
+  /* background-color: #e4ceb6; */
+  border-bottom: 5px solid #7a513b;
 }
 </style>

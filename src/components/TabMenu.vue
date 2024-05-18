@@ -1,11 +1,11 @@
 <template>
   <div class="TabshowTime mx-auto bg-white">
-    <h1 class="text-end p-3" style="color: #7c766a">تایم های رزرو</h1>
+    <h1 class="text-end p-5 font-yekan text-lg" style="color: #7c766a">تایم های رزرو</h1>
     <ul class="flex justify-between space-x-2 text-white">
       <li class="w-1/3">
         <button
           @click="activeTabOne"
-          class="inline-block w-full px-4 py-2"
+          class="inline-block w-full px-4 py-2 font-yekan"
           style="background-color: #e6b99a"
         >
           عصر و شب
@@ -14,7 +14,7 @@
       <li class="w-1/3">
         <button
           @click="activeTabTwo"
-          class="inline-block w-full px-4 py-2"
+          class="inline-block w-full px-4 py-2 font-yekan"
           style="background-color: #e6b99a"
         >
           ظهر
@@ -23,7 +23,7 @@
       <li class="w-1/3">
         <button
           @click="activeTabThree"
-          class="inline-block w-full px-4 py-2"
+          class="inline-block w-full px-4 py-2 font-yekan"
           style="background-color: #e6b99a"
         >
           صبح

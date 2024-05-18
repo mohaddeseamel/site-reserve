@@ -1,7 +1,9 @@
 <template>
   <div class="showUserStylish bg-white">
-    <h1 class="title text-end p-3" style="color: #7c766a">لیست آرایشگران</h1>
-    <div class="stylist-card flex p-5">
+    <h1 class="title text-end p-5 font-yekan text-lg" style="color: #7c766a">
+      لیست آرایشگران
+    </h1>
+    <div class="stylist-card flex px-5">
       <swiper
         effect="cube"
         :modules="modules"
@@ -20,16 +22,14 @@
           :class="[{ activeStyle: index === activeIndex }]"
           @click="toggleBg(index)"
         >
-          <!-- <img :src="`../assets/imgs/${user.img}.jpg`" alt="stylishImg"> -->
-
           <div class="w-full flex justify-center items-center">
             <img
-              src="../assets/imgs/stylish-1.jpg"
+              :src="`/src/assets/imgs/${user.img}.jpg`"
               alt="stylish-1"
               class="h-28 w-28 rounded-full object-cover border-2"
             />
           </div>
-          <span class="text-sm text-center mt-3" style="color: #7d5847">{{
+          <span class="text-sm text-center mt-3 font-yekan" style="color: #7d5847">{{
             user.name
           }}</span>
           <div class="star flex justify-center mt-3">
@@ -151,7 +151,7 @@ export default {
 </script>
 
 <style>
-.activeStyle{
+.activeStyle {
   border-color: #e3c7b0;
 }
 </style>
