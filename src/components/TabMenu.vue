@@ -6,7 +6,7 @@
         <button
           @click="activeTabOne"
           class="inline-block w-full px-4 py-2"
-          style="background-color: #e6b99a;"
+          style="background-color: #e6b99a"
         >
           عصر و شب
         </button>
@@ -15,7 +15,7 @@
         <button
           @click="activeTabTwo"
           class="inline-block w-full px-4 py-2"
-          style="background-color: #e6b99a;"
+          style="background-color: #e6b99a"
         >
           ظهر
         </button>
@@ -24,14 +24,14 @@
         <button
           @click="activeTabThree"
           class="inline-block w-full px-4 py-2"
-          style="background-color: #e6b99a;"
+          style="background-color: #e6b99a"
         >
           صبح
         </button>
       </li>
     </ul>
     <div class="p-4 text-center bg-white rounded-b-3xl">
-      <div v-if="tab === 1" class="flex justify-start  items-center flex-wrap">
+      <div v-if="tab === 1" class="flex justify-start items-center flex-wrap">
         <div
           class="timeBtn"
           ref="checkedBg"
@@ -41,8 +41,8 @@
           <button
             @click="changeColor(index)"
             :class="[{ active: indexActive == index }]"
-            class="border-2  ml-3 px-6 py-2 mt-3 rounded-lg w-40 hover:bg-orange-400"
-            style="border-color: #e5b99c;"
+            class="border-2 ml-3 px-6 py-2 mt-3 rounded-lg w-40"
+            style="border-color: #e5b99c"
           >
             {{ hour.time }}
           </button>
@@ -53,8 +53,8 @@
           <button
             @click="changeColor(index)"
             :class="[{ active: indexActive == index }]"
-            style="border-color: #e5b99c;"
-            class="border-2  ml-3 px-6 py-2 mt-3 rounded-lg w-40 hover:bg-red-400 hover:text-white hover:border-transparent"
+            style="border-color: #e5b99c"
+            class="border-2 ml-3 px-6 py-2 mt-3 rounded-lg w-40  hover:border-transparent"
           >
             {{ hour.time }}
           </button>
@@ -63,10 +63,10 @@
       <div v-if="tab === 3" class="flex justify-start items-center flex-wrap">
         <div class="timeBtn" v-for="(hour, index) in morningTime" :key="index">
           <button
-            class="border-2  ml-3 px-6 py-2 mt-3 rounded-lg w-40 hover:bg-red-400 hover:text-white hover:border-transparent"
+            class="border-2 ml-3 px-6 py-2 mt-3 rounded-lg w-40  hover:border-transparent"
             @click="changeColor(index)"
             :class="[{ active: indexActive == index }]"
-            style="border-color: #e5b99c;"
+            style="border-color: #e5b99c"
           >
             {{ hour.time }}
           </button>
@@ -192,7 +192,7 @@ export default {
 
 <style scoped>
 .active {
-  background-color: rgb(248 113 113);
+  background-color: #e4ceb6;
   color: white;
   border: transparent;
 }

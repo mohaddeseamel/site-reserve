@@ -21,13 +21,14 @@
         @click="toggleBg(index)"
         style="color: #969495"
       >
-        <span class="text-zinc-800 text-sm">{{ card.dateText }}</span>
+        <span class="text-sm" style="color: #928b85">{{ card.dateText }}</span>
         <span
           class="rounded-full mx-auto text-center visited:text-blue-800 underline-offset-30"
-          style="width: 2.2em; height: 2.2em; display: block; color: #7f7b72"
+          style="width: 2.2em; height: 2.2em; display: block; color: #8c6f60"
           >{{ card.dateNum }}</span
         >
       </swiper-slide>
+      <div class="border h-px" style="background-color: #ededed"></div>
     </swiper>
   </div>
 </template>
@@ -58,63 +59,63 @@ export default {
     const cards = reactive([
       {
         id: 0,
-        dateText: "امروز",
-        dateNum: 12,
+        dateText: "شنبه",
+        dateNum: 29,
       },
       {
         id: 1,
-        dateText: "امروز",
-        dateNum: 12,
+        dateText: "یکشنبه",
+        dateNum: 30,
       },
       {
         id: 2,
-        dateText: "امروز",
-        dateNum: 12,
+        dateText: "دوشنبه",
+        dateNum: 31,
       },
       {
         id: 3,
-        dateText: "یکشنبه",
-        dateNum: 8,
+        dateText: "سشنبه",
+        dateNum: 1,
       },
       {
         id: 4,
-        dateText: "یکشنبه",
-        dateNum: 8,
+        dateText: "چهارشنبه",
+        dateNum: 2,
       },
       {
         id: 5,
-        dateText: "یکشنبه",
-        dateNum: 8,
+        dateText: "پنجشنبه",
+        dateNum: 3,
       },
       {
         id: 6,
-        dateText: "شنبه",
-        dateNum: 9,
+        dateText: "جمعه",
+        dateNum: 4,
       },
       {
         id: 7,
-        dateText: "جمعه",
-        dateNum: 10,
+        dateText: "شنبه",
+        dateNum: 5,
       },
       {
         id: 8,
-        dateText: "پنجشنبه",
-        dateNum: 11,
+        dateText: "یکشنبه",
+        dateNum: 6,
       },
       {
         id: 9,
-        dateText: "جمعه",
-        dateNum: 12,
+        dateText: "دوشنبه",
+        dateNum: 7,
       },
       {
         id: 10,
-        dateText: "شنبه",
-        dateNum: 13,
+        dateText: "سشنبه",
+        dateNum: 8,
       },
       {
         id: 11,
-        dateText: "یکشنبه",
-        dateNum: 13,
+        dateText: "چهارشنبه",
+        dateNum: 9,
       },
     ]);
     let swiperRef = null;
@@ -168,6 +169,6 @@ export default {
   background: blue;
 }
 .active {
-  background-color: rgb(252 165 165);
+  background-color: #e4ceb6;
 }
 </style>
