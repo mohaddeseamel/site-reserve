@@ -1,6 +1,6 @@
 <template>
   <div class="w-screen px-11 py-5 flex-col max-h-60">
-    <div class="header flex justify-between items-center">
+    <div class="header flex justify-between items-center overflow-hidden">
       <div class="header-logo px-12 flex items-center justify-end text-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +15,7 @@
         </svg>
         <h1 class="text-[#62c17d] text-2xl font-[500]">Colorful Beauty</h1>
         <div class="list p-5 mr-10">
-          <ul class="flex cursor-pointer text-lg">
+          <ul class="flex cursor-pointer lg:text-base text-sm">
             <li class="mr-10 text-dark hover:text-[#62c17d]">صفحه اصلی</li>
             <li class="mr-10 text-dark hover:text-[#62c17d]">رزرو آنلاین</li>
             <li class="mr-10 text-dark hover:text-[#62c17d]">درباره ما</li>
@@ -25,29 +25,33 @@
       </div>
       <div class="userAccount px-12">
         <button
-          class="account-style text-[#62c17d] rounded-full px-6 py-3 text-sm bg-white hover:bg-[#62c17d] hover:text-white"
+          class="account-style text-[#62c17d] rounded-full lg:px-6 lg:py-3 p-2 text-sm bg-white hover:bg-[#62c17d] hover:text-white"
         >
           حساب کاربری
         </button>
       </div>
     </div>
-    <div class="content flex container mx-auto">
-      <div class="content-title w-2/3 px-10 py-32 leading-10">
+    <div class="content lg:flex lg:flex-row container mx-auto">
+      <div
+        class="content-title lg:w-2/3 w-full lg:px-10 lg:py-32 py-14 leading-10 justify-center"
+      >
         <h1
-          class="text-right text-[40px] mb-5 py-5 px-3 dana-bold"
+          class="lg:text-right text-center lg:text-[40px] text-[30px] lg:mb-5 lg:py-5 px-3 dana-bold"
         >
           کالرفول بیوتی، رزرو آنلاین
         </h1>
         <p
-          class="text-right p-3 bg-white w-fit text-dark w-5/6 rounded-lg text-[20px] leading-9"
+          class="lg:text-right text-center p-3 bg-white w-fit text-dark w-5/6 rounded-lg lg:text-[20px] text-[15px] leading-9"
         >
-          کالرفول بیوتی با هدف رفع نیاز کاربران و صرفه جویی در وقت، امکان  
-          رزرو نوبت به صورت آنلاین را فراهم کرده است
-          و کاربران میتوانند در کمترین زمان بیوتی کالر خود را انتخاب کنند
+          کالرفول بیوتی با هدف رفع نیاز کاربران و صرفه جویی در وقت، امکان رزرو
+          نوبت به صورت آنلاین را فراهم کرده است و کاربران میتوانند در کمترین
+          زمان بیوتی کالر خود را انتخاب کنند
         </p>
-        <div class="signin-signup mt-10">
+        <div
+          class="signin-signup lg:mt-10 mt-8 flex lg:justify-start justify-center"
+        >
           <button
-            class="text-[#62c17d] rounded-full px-6 py-2 text-sm ml-2 border-2 border-[#62c17d] hover:bg-[#62c17d] hover:text-white"
+            class="rounded-full px-6 py-2 text-sm ml-2  bg-[#62c17d] text-white"
           >
             ثبت نام
           </button>
@@ -58,7 +62,7 @@
           </button>
         </div>
       </div>
-      <div class="img-header w-1/3 mt-8">
+      <div class="img-header lg:w-1/3 w-full lg:mt-8 ">
         <img src="../assets/imgs/beauty-3.jpg" alt="img-header-beauty" />
       </div>
     </div>
