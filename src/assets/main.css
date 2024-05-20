@@ -13,5 +13,8 @@
     src: url("../../public/font-danaFanNum/DanaFaNum-Bold.woff2");
   }
   .dana-bold{
-    font-family: DanaFaNum;
+    font-family: DanaFaNum !important;
+  }
+  *{
+    font-family:Yekan;
   }

@@ -25,7 +25,7 @@
       </div>
       <div class="userAccount px-12">
         <button
-          class="account-style text-[#62c17d] rounded-full lg:px-6 lg:py-3 p-2 text-sm bg-white hover:bg-[#62c17d] hover:text-white"
+          class="account-style text-[#62c17d] rounded-full w-40 py-2 text-sm bg-white hover:bg-[#62c17d] hover:text-white"
         >
           حساب کاربری
         </button>
@@ -51,12 +51,12 @@
           class="signin-signup lg:mt-10 mt-8 flex lg:justify-start justify-center"
         >
           <button
-            class="rounded-full px-6 py-2 text-sm ml-2  bg-[#62c17d] text-white"
+            class="rounded-lg  text-sm ml-2 w-40 py-2 bg-[#62c17d] text-white"
           >
             ثبت نام
           </button>
           <button
-            class="text-[#62c17d] rounded-full px-6 py-2 text-sm border-2 border-[#62c17d] hover:bg-[#62c17d] hover:text-white"
+            class="text-[#62c17d] rounded-lg w-40 py-2 text-sm border-2 border-[#62c17d] hover:bg-[#62c17d] hover:text-white"
           >
             ورود
           </button>
