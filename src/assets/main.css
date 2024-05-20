@@ -7,3 +7,11 @@
     font-family: "Yekan";
     src: url("../../public/font-yekan/Yekan.ttf");
   }
+
+@font-face {
+    font-family: "DanaFaNum";
+    src: url("../../public/font-danaFanNum/DanaFaNum-Bold.woff2");
+  }
+  .dana-bold{
+    font-family: DanaFaNum;
+  }

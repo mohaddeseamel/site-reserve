@@ -6,7 +6,8 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        "yekan":["Yekan"]
+        "yekan":["Yekan"],
+        "DanaFaNum":["DanaFaNum-Bold"]
       }
     },
   },
