@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen px-11 py-5 flex-col max-h-60">
+  <div class="w-screen px-11 py-5 flex-col">
     <div class="header flex justify-between items-center overflow-hidden">
       <div class="header-logo px-12 flex items-center justify-end text-center">
         <svg
@@ -25,7 +25,7 @@
       </div>
       <div class="userAccount px-12">
         <button
-          class="account-style text-[#62c17d] rounded-full w-40 py-2 text-sm bg-white hover:bg-[#62c17d] hover:text-white"
+          class="account-style text-[#62c17d] rounded-full lg:px-6 lg:py-3 p-2 text-sm bg-white hover:bg-[#62c17d] hover:text-white"
         >
           حساب کاربری
         </button>
@@ -45,13 +45,13 @@
         >
           کالرفول بیوتی با هدف رفع نیاز کاربران و صرفه جویی در وقت، امکان رزرو
           نوبت به صورت آنلاین را فراهم کرده است و کاربران میتوانند در کمترین
-          زمان بیوتی کالر خود را انتخاب کنند
+          زمان بیوتی کالر خود را انتخاب نمایند
         </p>
         <div
           class="signin-signup lg:mt-10 mt-8 flex lg:justify-start justify-center"
         >
           <button
-            class="rounded-lg  text-sm ml-2 w-40 py-2 bg-[#62c17d] text-white"
+            class="rounded-lg text-sm ml-2 w-40 py-2 bg-[#62c17d] text-white"
           >
             ثبت نام
           </button>
@@ -62,7 +62,7 @@
           </button>
         </div>
       </div>
-      <div class="img-header lg:w-1/3 w-full lg:mt-8 ">
+      <div class="img-header lg:w-1/3 w-full lg:mt-8">
         <img src="../assets/imgs/beauty-3.jpg" alt="img-header-beauty" />
       </div>
     </div>
