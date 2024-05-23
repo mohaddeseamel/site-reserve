@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="bg-[#dff8e5] overflow-auto">
     <div class="content flex justify-center py-20 w-screen h-screen">
       <!-- <div class="w-1/5">
         <ownerBox/>
@@ -28,7 +28,7 @@ const showData = (e) => {
 </script>
 
 <style scoped>
-.content {
+/* .content {
   background-color: #f7daca;
-}
+} */
 </style>

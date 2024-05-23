@@ -28,7 +28,7 @@
           >{{ card.dateNum }}</span
         >
       </swiper-slide>
-      <div class="border h-px" style="background-color: #ededed"></div>
+      <div class="border h-px bg-[#ededed]"></div>
     </swiper>
   </div>
 </template>
@@ -170,6 +170,6 @@ export default {
 }
 .active {
   /* background-color: #e4ceb6; */
-  border-bottom: 5px solid #7a513b;
+  border-bottom: 5px solid #62c17d;
 }
 </style>

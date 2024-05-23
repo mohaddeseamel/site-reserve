@@ -4,7 +4,7 @@
   >
     <div
       v-if="loginform"
-      class="border-2 bg-white text-end p-8 h-80 leading-10 rounded-lg"
+      class="border-2 bg-white text-start p-8 h-80 leading-10 rounded-lg"
       style="width: 400px"
     >
       <form @submit.prevent="goTosendSms">
@@ -12,7 +12,7 @@
           <h1 class="font-bold text-xl text-neutral-900">ورود | ثبت نام</h1>
         </div>
         <div class="guide">
-          <span class="text-sm text-gray-500 leading-relaxed">!سلام</span>
+          <span class="text-sm text-gray-500 leading-relaxed">ُسلام!</span>
         </div>
         <div class="mobileField">
           <label class="text-sm text-gray-500"
@@ -42,7 +42,7 @@
     >
       <form>
         <div class="sub-title">
-          <h1 class="text-lg text-gray-500 leading-relaxed">
+          <h1 class="text-lg text-gray-500 leading-relaxed text-start">
             کد تایید را وارد کنید
           </h1>
         </div>

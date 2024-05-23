@@ -1,5 +1,5 @@
 <template>
-    <div class="Ratings p-5 flex justify-between items-center" style="background-color: #e3ba9c;">
+    <div class="Ratings p-5 flex justify-between items-center bg-[#62c17d]">
         <button class="prev flex text-sm text-white">
           <svg
             class="h-5 w-5 text-white"
