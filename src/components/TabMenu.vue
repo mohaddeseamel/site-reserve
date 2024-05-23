@@ -186,7 +186,7 @@ export default {
 
 <style scoped>
 .active {
-  background-color: #e4ceb6;
+  background-color: #53c373;
   color: white;
   border: transparent;
 }
