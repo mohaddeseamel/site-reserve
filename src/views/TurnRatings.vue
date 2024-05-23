@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#dff8e5] overflow-auto">
+  <div class="bg-green-light overflow-hidden">
     <div class="content flex justify-center py-20 w-screen h-screen">
       <!-- <div class="w-1/5">
         <ownerBox/>

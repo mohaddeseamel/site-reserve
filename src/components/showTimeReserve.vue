@@ -1,6 +1,6 @@
 <template>
   <div
-    class="showTimeReserve  w-full bg-white flex justify-between items-center"
+    class="showTimeReserve  w-full bg-white-default flex justify-between items-center"
   >
     <swiper
       effect="cube"
@@ -13,22 +13,21 @@
       class="mySwiper"
     >
       <swiper-slide
-        class="card flex w-24 text-center  focus:bg-red-300 cursor-pointer p-2 flex-col leading-8 overflow-x-hidden"
+        class="card flex w-24 text-center text-gray-light cursor-pointer p-2 flex-col leading-8 overflow-x-hidden"
         v-for="(card, index) in cards"
         :key="index"
         :virtualIndex="card.id"
         :class="[{ active: index === activeIndex }]"
         @click="toggleBg(index)"
-        style="color: #969495"
       >
-        <span class="text-base font-yekan " style="color: #928b85">{{ card.dateText }}</span>
+        <span class="text-base font-yekan text-gray-dark" >{{ card.dateText }}</span>
         <span
-          class="rounded-full mx-auto text-center visited:text-blue-800 underline-offset-30"
+          class="rounded-full mx-auto text-center visited:text-blue-800 underline-offset-30 text-fontColor-brown"
           style="width: 2.2em; height: 2.2em; display: block; color: #8c6f60"
           >{{ card.dateNum }}</span
         >
       </swiper-slide>
-      <div class="border h-px bg-[#ededed]"></div>
+      <div class="border h-px text-gray-lighten"></div>
     </swiper>
   </div>
 </template>
