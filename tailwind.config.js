@@ -28,10 +28,16 @@ export default {
         light:'#969495',
         default:'#7c766a',
         dark:'#928b85',
-        darken:'#cdcac1'
+        darken:'#cdcac1',
+        neutralLight:'#f3f4f6',
+        neutral:'#171717',
+        lightgray:'#6b7280'
       },
       white:{
         default:'#fff'
+      },
+      red:{
+        default:'#ef4444'
       },
       fontColor:{
         white:'#fff',

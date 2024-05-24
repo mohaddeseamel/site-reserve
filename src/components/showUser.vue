@@ -26,7 +26,7 @@
             <img
               :src="`/src/assets/imgs/${user.img}.jpg`"
               alt="stylish-1"
-              class="h-28 w-28 rounded-full object-cover border-2"
+              class="h-28 w-28 rounded-full object-cover"
             />
           </div>
           <span class="text-sm text-center mt-3 font-yekan text-fontColor-brown">{{
