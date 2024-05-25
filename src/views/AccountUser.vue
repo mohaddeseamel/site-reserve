@@ -24,7 +24,9 @@
             >Colorful Beauty</span
           >
         </div> -->
-        <div class="form-account bg-gray-secondgray w-2/3 p-10 leading-10">
+        <div
+          class="form-account bg-gray-secondgray w-2/3 h-full p-10 leading-10"
+        >
           <form action="#">
             <div class="phoneNumber flex flex-col">
               <label for="number">شماره تلفن</label>
@@ -48,6 +50,10 @@
               ورود
             </button>
           </form>
+          <div class="create-account flex justify-center mt-3 text-[13px]">
+            <span class="ml-2">حساب کاربری ندارید؟</span>
+            <span class="text-green-dark">ثبت نام کنید</span>
+          </div>
         </div>
       </div>
       <div class="imgAccount w-1/2">
