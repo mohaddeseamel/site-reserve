@@ -12,7 +12,9 @@
           <h1 class="font-bold text-xl text-gray-neutral">ورود | ثبت نام</h1>
         </div>
         <div class="guide">
-          <span class="text-sm text-gray-lightgray leading-relaxed">ُسلام!</span>
+          <span class="text-sm text-gray-lightgray leading-relaxed"
+            >ُسلام!</span
+          >
         </div>
         <div class="mobileField">
           <label class="text-sm text-gray-lightgray"
@@ -42,7 +44,7 @@
     >
       <form>
         <div class="sub-title">
-          <h1 class="text-lg text-gray-lightgray  leading-relaxed text-start">
+          <h1 class="text-lg text-gray-lightgray leading-relaxed text-start">
             کد تایید را وارد کنید
           </h1>
         </div>
@@ -54,11 +56,11 @@
           />
         </div>
         <div class="btn-submit">
-          <router-link to="/turnRatings">
+          <router-link to="/dashboard">
             <button
               class="w-full bg-red-default p-1 text-white-default mt-8 rounded-lg"
-              @submit.prevent="redirectToTurnRatings()"
             >
+            <!--@submit.prevent="redirectToTurnRatings()"-->
               ادامه
             </button></router-link
           >
@@ -89,6 +91,6 @@ const redirectToTurnRatings = () => {
   console.log(
     "redirectToTurnRatingsredirectToTurnRatingsredirectToTurnRatingsredirectToTurnRatings"
   );
-  router.push({ name: "TurnRatings.vue", path: "/TurnRatings" });
+  router.push({ name: "dashboard.vue", path: "/dashboard" });
 };
 </script>
