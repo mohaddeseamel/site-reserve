@@ -31,7 +31,8 @@ export default {
         darken:'#cdcac1',
         neutralLight:'#f3f4f6',
         neutral:'#171717',
-        lightgray:'#6b7280'
+        lightgray:'#6b7280',
+        secondgray:'#f5f5f5'
       },
       white:{
         default:'#fff'
