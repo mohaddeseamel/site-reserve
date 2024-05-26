@@ -43,6 +43,10 @@
       style="width: 400px"
     >
       <form>
+        <Icon
+          icon="icon-park-outline:foundation-makeup"
+          class="text-red-default md:text-5xl text-2xl z-10"
+        />
         <div class="sub-title">
           <h1 class="text-lg text-gray-lightgray leading-relaxed text-start">
             کد تایید را وارد کنید
@@ -60,7 +64,7 @@
             <button
               class="w-full bg-red-default p-1 text-white-default mt-8 rounded-lg"
             >
-            <!--@submit.prevent="redirectToTurnRatings()"-->
+              <!--@submit.prevent="redirectToTurnRatings()"-->
               ادامه
             </button></router-link
           >

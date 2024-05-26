@@ -43,12 +43,12 @@
           >
             صفحه اصلی
           </a>
-          <a
-            href="#responsive-header"
+          <router-link
+            to="/turnRatings"
             class="no-underline lg:text-base text-sm text-center block mt-4 md:inline-block md:mt-0 text-teal-lighter hover:text-white lg:mr-6 mr-4 hover:text-green-dark"
           >
             رزرو آنلاین
-          </a>
+          </router-link>
           <a
             href="#responsive-header"
             class="no-underline lg:text-base text-sm text-center block mt-4 md:inline-block md:mt-0 text-teal-lighter hover:text-white lg:mr-6 mr-4 hover:text-green-dark"
