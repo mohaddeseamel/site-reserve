@@ -4,8 +4,10 @@
       <div class="flex items-center flex-no-shrink text-white mr-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          lg:width="3em" width="2em"
-          lg:height="3em" height="2em"
+          lg:width="3em"
+          width="2em"
+          lg:height="3em"
+          height="2em"
           viewBox="0 0 50 50"
         >
           <path
@@ -62,8 +64,11 @@
             تماس با ما
           </a>
         </div>
-        <div class="userAccount px-12 flex justify-center items-center mr-6 mt-4">
-          <router-link to="/AccountUser"
+        <div
+          class="userAccount px-12 flex justify-center items-center mr-6 mt-4"
+        >
+          <router-link
+            to="/login"
             class="account-style text-center no-underline inline-block bg-white hover:bg-green-dark hover:text-fontColor-white text-sm w-40 py-2 leading-none border rounded-lg text-green-dark border-white hover:border-transparent mt-4 sm:mt-0"
           >
             حساب کاربری
@@ -90,16 +95,18 @@
         <div
           class="signin-signup lg:mt-10 mt-8 flex lg:justify-start justify-center"
         >
-          <button
-            class="rounded-lg text-sm ml-2 w-40 py-2 bg-green-dark text-fontColor-white"
+          <router-link
+            to="/register"
+            class="rounded-lg text-sm ml-2 text-center w-40 py-2 bg-green-dark text-fontColor-white"
           >
             ثبت نام
-          </button>
-          <button
-            class="text-green-dark rounded-lg w-40 py-2 text-sm border-2 border-green-dark hover:bg-green-dark hover:text-fontColor-white"
+          </router-link>
+          <router-link
+            to="/login"
+            class="text-green-dark text-center rounded-lg w-40 py-2 text-sm border-2 border-green-dark hover:bg-green-dark hover:text-fontColor-white"
           >
             ورود
-          </button>
+          </router-link>
         </div>
       </div>
       <div class="img-header lg:w-1/3 w-full lg:mt-8">
