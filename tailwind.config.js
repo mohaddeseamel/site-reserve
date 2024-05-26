@@ -44,7 +44,8 @@ export default {
         white:'#fff',
         dark:'#000',
         gray:'#999',
-        brown:'#8c6f60'
+        brown:'#8c6f60',
+        darken:'#212529'
       },
     }
   },
