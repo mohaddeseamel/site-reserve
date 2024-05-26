@@ -63,11 +63,11 @@
           </a>
         </div>
         <div class="userAccount px-12 flex justify-center items-center mr-6 mt-4">
-          <button
-            class="account-style  no-underline inline-block bg-white hover:bg-green-dark hover:text-fontColor-white text-sm w-40 py-2 leading-none border rounded-lg text-green-dark border-white hover:border-transparent mt-4 sm:mt-0"
+          <router-link to="/AccountUser"
+            class="account-style text-center no-underline inline-block bg-white hover:bg-green-dark hover:text-fontColor-white text-sm w-40 py-2 leading-none border rounded-lg text-green-dark border-white hover:border-transparent mt-4 sm:mt-0"
           >
             حساب کاربری
-          </button>
+          </router-link>
         </div>
       </div>
     </nav>
