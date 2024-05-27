@@ -32,7 +32,9 @@ export default {
         neutralLight:'#f3f4f6',
         neutral:'#171717',
         lightgray:'#6b7280',
-        secondgray:'#f5f5f5'
+        secondgray:'#f5f5f5',
+        thirdgray:'#ccc',
+        forthgray:'#eee'
       },
       white:{
         default:'#fff'
