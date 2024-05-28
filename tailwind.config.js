@@ -7,7 +7,6 @@ export default {
     extend: {
       fontFamily:{
         "yekan":["Yekan"],
-        "DanaFaNum":["DanaFaNum-Bold"]
       }
     },
     screens:{
