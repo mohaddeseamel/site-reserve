@@ -33,7 +33,8 @@ export default {
         lightgray:'#6b7280',
         secondgray:'#f5f5f5',
         thirdgray:'#ccc',
-        forthgray:'#eee'
+        forthgray:'#eee',
+        fivth:'#636162'
       },
       white:{
         default:'#fff'

@@ -12,9 +12,17 @@
     font-family: "DanaFaNum";
     src: url("../../public/font-danaFanNum/DanaFaNum-Bold.woff2");
   }
+  @font-face {
+    font-family: "DanaFaNumMedium";
+    src: url("../../public/font-danaFanNum/DanaFaNum-Medium.woff2");
+  }
+  
+  *{
+    font-family:Yekan;
+  }
   .dana-bold{
     font-family: DanaFaNum !important;
   }
-  *{
-    font-family:Yekan;
+  .dana-medium{
+    font-family: DanaFaNumMedium !important;
   }
