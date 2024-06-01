@@ -1,7 +1,7 @@
 <template>
   <div class="contant-site container mx-auto">
-    <div class="main-content py-16">
-      <div class="mt-6">
+    <div class="main-content  flex">
+      <div class="mt-6 w-2/3 py-16">
         <div class="title">
           <h1 class="dana-bold text-[1.8em]">
             نگران رزرو نوبت آرایشگاه و خدمات زیبایی خود نباشید!
@@ -17,7 +17,9 @@
           </ul>
         </div>
       </div>
-      <div class="img-dec"></div>
+      <div class="img-dec w-1/3 p-5 ml-12">
+        <img src="../assets/imgs/beauty-5.jpg" alt="">
+      </div>
     </div>
   </div>
 </template>
