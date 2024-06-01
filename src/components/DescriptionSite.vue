@@ -1,7 +1,7 @@
 <template>
   <div class="contant-site container mx-auto">
     <div class="main-content  flex">
-      <div class="mt-6 w-2/3 py-16">
+      <div class="mt-6 w-2/3 py-16 mr-5">
         <div class="title">
           <h1 class="dana-bold text-[1.8em]">
             نگران رزرو نوبت آرایشگاه و خدمات زیبایی خود نباشید!
