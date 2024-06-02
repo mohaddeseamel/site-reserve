@@ -17,7 +17,7 @@
           </ul>
         </div>
       </div>
-      <div class="img-dec w-1/3 p-5 ml-12">
+      <div class="img-dec w-1/3 p-5">
         <img src="../assets/imgs/beauty-5.jpg" alt="">
       </div>
     </div>
