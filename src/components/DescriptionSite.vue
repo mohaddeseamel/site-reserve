@@ -1,13 +1,13 @@
 <template>
   <div class="contant-site container mx-auto">
-    <div class="main-content  flex">
-      <div class="mt-6 w-2/3 py-16 mr-5">
+    <div class="main-content  lg:flex">
+      <div class="mt-6 lg:w-2/3 w-full py-16 mr-5">
         <div class="title">
-          <h1 class="dana-bold text-[1.8em]">
+          <h1 class="dana-bold lg:text-[1.8em] text-[1.4em] ">
             نگران رزرو نوبت آرایشگاه و خدمات زیبایی خود نباشید!
           </h1>
           <ul class="mt-12">
-            <li v-for="(list, index) in descBeauty" :key="index" class="flex text-gray-fivth mt-5 dana-medium text-[1.1em]">
+            <li v-for="(list, index) in descBeauty" :key="index" class="flex text-gray-fivth mt-5 dana-medium lg:text-[1.1em] text-[0.9em]">
               <icon
                 icon="material-symbols:check"
                 class="text-white-default font-bold rounded-full bg-green-dark ml-3 text-lg"
@@ -17,7 +17,7 @@
           </ul>
         </div>
       </div>
-      <div class="img-dec w-1/3 p-5">
+      <div class="img-dec lg:w-1/3 w-full p-5">
         <img src="../assets/imgs/beauty-5.jpg" alt="">
       </div>
     </div>
