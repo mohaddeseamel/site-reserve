@@ -27,7 +27,7 @@
       </div>
     </div>
     <div
-      class="special-services lg:mt-28 mt-12 flex md:flex-row flex-col items-center justify-around text-center"
+      class="special-services  mt-12 flex md:flex-row flex-col items-center justify-around text-center"
     >
       <div
         class="education text-center  flex flex-col items-center justify-center cursor-pointer"
