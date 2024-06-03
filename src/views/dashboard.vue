@@ -4,6 +4,7 @@
     <servicesSystem />
     <questionUser/>
     <DescriptionSite/>
+    <FooterSite/>
   </div>
 </template>
 
@@ -12,4 +13,5 @@ import HeaderDashboard from "../components/HeaderDashboard.vue";
 import servicesSystem from "../components/servicesSystem.vue";
 import questionUser from "../components/questionUser.vue";
 import DescriptionSite from "../components/DescriptionSite.vue";
+import FooterSite from "../components/FooterSite.vue"
 </script>
