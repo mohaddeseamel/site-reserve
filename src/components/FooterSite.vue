@@ -75,7 +75,7 @@
       class="contaont-relationship mt-20 mr-6 flex lg:flex-row flex-col items-center justify-between"
     >
       <div class="content lg:w-1/2 w-full">
-        <h1 class="dana-bold text-[1.1em] lg:text-right text-center mb-5">رسالت کالرفول بیوتی</h1>
+        <h1 class="dana-bold lg:text-[1.8em] text-[1.4em] lg:text-right text-center mb-5">رسالت کالرفول بیوتی</h1>
         <p class="mt-4 text-justify text-lg">
           هدف کالرفول بیوتی این است که کاربران در کمترین زمان بدون معطل شدن در
           آرایشگاه ها بتوانند
