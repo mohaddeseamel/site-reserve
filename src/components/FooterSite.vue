@@ -22,7 +22,8 @@
       <div class="btnGoback text-center hover:bg-green-dark flex items-center justify-center bg-white-default w-10 h-10 rounded-full cursor-pointer">
         <Icon
           icon="pepicons-pencil:arrow-up"
-          class="text-green-dark hover:text-white-default md:text-5xl text-2xl text-center"
+          class="text-green-dark hover:text-white-default md:text-5xl text-2xl text-center fixed"
+          @click="gotoTop()"
         />
       </div>
     </div>
@@ -97,6 +98,13 @@
 
 <script setup>
 import { Icon } from "@iconify/vue";
+
+const gotoTop = () =>{
+  window.scrollTo({
+    top:0,
+    behavior:'smooth'
+  })
+}
 </script>
 
 <style></style>
